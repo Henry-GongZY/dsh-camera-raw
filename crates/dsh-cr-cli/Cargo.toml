@@ -1,0 +1,11 @@
+[package]
+name = "dsh-cr-cli"
+version.workspace = true
+edition.workspace = true
+description = "DSH Camera Raw CLI 宿主：调用插件引擎完成 DNG 操作，兼作验证工具"
+
+[dependencies]
+dsh-cr-core = { path = "../dsh-cr-core" }
+dng-core = { path = "../../../RustDNG/crates/dng-core" }
+libloading = "0.8"
+serde_json.workspace = true

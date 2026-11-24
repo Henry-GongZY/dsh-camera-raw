@@ -1,0 +1,13 @@
+[package]
+name = "dsh-cr-plugin"
+version.workspace = true
+edition.workspace = true
+description = "DSH Camera Raw 插件 ABI 层：把 dsh-cr-core 暴露为可被任意宿主加载的 C ABI 动态库"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+dsh-cr-core = { path = "../dsh-cr-core" }
+serde.workspace = true
+serde_json.workspace = true

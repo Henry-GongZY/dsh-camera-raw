@@ -1,0 +1,14 @@
+[package]
+name = "dsh-cr-core"
+version.workspace = true
+edition.workspace = true
+description = "DSH Camera Raw 插件核心引擎：基于 RustDNG 的 ACR 式 DNG 操作"
+
+[dependencies]
+# RustDNG：Adobe DNG SDK 1.7.1 的纯 Rust 重写（本地路径依赖；后续可一行切换为 git 依赖）
+dng-core = { path = "../../../RustDNG/crates/dng-core" }
+dng-sdk = { path = "../../../RustDNG/crates/dng-sdk" }
+# XMP 命名空间常量（dng-sdk 内部也依赖此 crate）
+dng-xmp = { path = "../../../RustDNG/crates/dng-xmp" }
+serde.workspace = true
+serde_json.workspace = true

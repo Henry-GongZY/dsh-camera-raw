@@ -1,0 +1,18 @@
+# Rust / Cargo
+/target/
+**/*.rs.bk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor & IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
